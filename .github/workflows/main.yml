@@ -34,11 +34,11 @@ jobs:
               issue_query: 'repo:libgit2/libgit2 is:open is:issue created:>{{ date("-7 days") }} sort:created-asc'
         token: ${{ github.token }}
 
-   # - name: Publish Documentation
-     # run: |
-     #   git add .
-     #   git config user.name 'Dashboard User'
-     #   git config user.email 'nobody@nowhere'
-     #   git commit -m 'Documentation update' --allow-empty
-     #   git push origin gh-pages
-     # working-directory: out
+    - name: Publish Documentation
+      run: |
+        git add .
+        git config user.name 'Dashboard User'
+        git config user.email 'nobody@nowhere'
+        git commit -m 'Documentation update' --allow-empty
+        git push origin dashboard.html
+      working-directory: out
