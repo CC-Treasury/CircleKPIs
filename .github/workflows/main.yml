@@ -30,6 +30,24 @@ jobs:
             - type: 'table'
               title: 'Issue Dashboard'
               issue_query: 'Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue created:>{{ date("2018-11-25 + 1 month") }} sort:created-asc'
+          sections:
+          - title: 'Metric to US'
+            description: 'Distance, mass and volume; metric to US.'
+            widgets:
+            - type: number
+              value: '1.61'
+              title: 'Kilometers in a mile'
+              url: 'https://www.google.com/search?q=km+to+miles'
+              color: 'blue'
+            - type: number
+              value: '0.454'
+              title: 'Kilograms in a pound'
+              color: 'red'
+            - type: number
+              value: '1.06'
+              title: 'Liters in a quart'
+              color: 'green'
+              
         token: ${{ github.token }}
 
     - name: Publish Documentation
