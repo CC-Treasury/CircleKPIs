@@ -56,7 +56,7 @@ jobs:
               - title: 'Toolmakers and Maintainers'
                 value: 1
                 color: red
-               - title: 'Stake Pool Operators'
+              - title: 'Stake Pool Operators'
                 value: 1
                 color: red
           - title: 'Issues'
