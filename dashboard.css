@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap'); */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    /* font-family: 'Space Mono', monospace; */
     width: 1000px;
     margin: 0 auto 0 auto;
     background-color: #eeeeee;
@@ -11,21 +15,21 @@ a {
 }
 
 :root {
-    --color-red-background: #ee0000;
+    --color-red-background: #dc3545;
     --color-red-foreground: #ffffff;
-    --color-red-border: #cc0000;
+    --color-red-border: #CD303E;
 
-    --color-yellow-background: #eeee00;
+    --color-yellow-background: #ffc107;
     --color-yellow-foreground: #000000;
-    --color-yellow-border: #cccc00;
+    --color-yellow-border: #EBAE06;
 
-    --color-green-background: #00bb00;
+    --color-green-background: #28a745;
     --color-green-foreground: #ffffff;
-    --color-green-border: #999900;
+    --color-green-border: #28a745;
 
-    --color-blue-background: #0000ee;
+    --color-blue-background: #007bff;
     --color-blue-foreground: #ffffff;
-    --color-blue-border: #0000cc;
+    --color-blue-border: #006FF0;
 
     --color-black-background: #000000;
     --color-black-foreground: #ffffff;
@@ -33,6 +37,14 @@ a {
 }
 
 /* Header / footer */
+
+h1 {
+    background-image: url("https://www.jhipster.tech/images/logo/logo-jhipster.svg");
+    background-repeat: no-repeat;
+    height: 67px;
+    padding-left: 178px;
+    font-family: 'Pacifico', cursive;
+}
 
 div#analytics h1 {
     width: 900px;
