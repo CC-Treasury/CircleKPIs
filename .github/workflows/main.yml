@@ -1,8 +1,7 @@
 name: Build Dashboard
 
 on:
-  schedule:
-  - cron: 0 * * * *
+  workflow_dispatch:
 
 jobs:
   build:
@@ -24,7 +23,7 @@ jobs:
           title: 'Dashboard'
           output:
             format: html
-            filename: 'out/dashboard.html'
+            filename: 'out/index.html'
           sections:
           - title: 'Pull Requests'
             widgets:
