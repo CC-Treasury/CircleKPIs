@@ -34,17 +34,16 @@ jobs:
             description: 'Distance, mass and volume; metric to US.'
             widgets:
             - type: number
-              value: '1.61'
-              title: 'Kilometers in a mile'
-              url: 'https://www.google.com/search?q=km+to+miles'
+              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue created:>{{ date("-1000 days") }}'
+              title: 'Total open Issues'
               color: 'blue'
             - type: number
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue'
-              title: 'Kilograms in a pound'
+              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-30 days") }}'
+              title: 'Opened issues this month'
               color: 'red'
             - type: number
-              value: '1.06'
-              title: 'Liters in a quart'
+              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue closed:>{{ date("-30 days") }}'
+              title: 'Closed issues this month'
               color: 'green'
               
         token: ${{ github.token }}
