@@ -40,8 +40,8 @@ jobs:
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue closed:>{{ date("-30 days") }}'
               title: 'Closed issues this month'
               color: 'green'
-          - title: 'Pizza preferences'
-            description: 'Type of pizza preferred by respondents.'
+          - title: 'Circles'
+            description: 'Issues per group'
             widgets:
             - type: graph
               title: Pizza variety
