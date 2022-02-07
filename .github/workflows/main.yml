@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: 'files'
-        path: '/out'
+        path: 'out'
 
     - name: 'Generate Dashboard'
       uses: ethomson/issue-dashboard@v1
