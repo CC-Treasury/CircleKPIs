@@ -46,7 +46,7 @@ jobs:
             - type: graph
               title: Circle groups
               elements:
-              - title: General ADA Holders
+              - title: 'General ADA Holders'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue is:open label:'General Voters' created:>{{ date("-1000 days") }}'
                 color: green
               - title: 'Community Advisors'
