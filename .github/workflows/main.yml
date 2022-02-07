@@ -25,11 +25,6 @@ jobs:
             format: html
             filename: 'out/index.html'
           sections:
-          - title: 'Issues'
-            widgets:
-            - type: 'table'
-              title: 'Issue Dashboard'
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
           - title: 'Status'
             description: 'Current state of Catalyst Prioritized Problems board'
             widgets:
@@ -45,6 +40,27 @@ jobs:
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue closed:>{{ date("-30 days") }}'
               title: 'Closed issues this month'
               color: 'green'
+          - title: 'Pizza preferences'
+            description: 'Type of pizza preferred by respondents.'
+            widgets:
+            - type: graph
+              title: Pizza variety
+              elements:
+              - title: New York
+                value: 18
+                color: green
+              - title: Chicago
+                value: 16
+              - title: Neopolitan
+                value: 15
+              - title: 'New Haven'
+                value: 1
+                color: red
+          - title: 'Issues'
+            widgets:
+            - type: 'table'
+              title: 'Issue Dashboard'
+              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
               
         token: ${{ github.token }}
 
