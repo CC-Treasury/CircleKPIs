@@ -48,17 +48,17 @@ jobs:
               elements:
               - title: 'General ADA Holders'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue is:open label:'General Voters' created:>{{ date("-1000 days") }}'
-                color: green
+                color: 'green'
               - title: 'Community Advisors'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue is:open label:'Community Advisor' created:>{{ date("-1000 days") }}'
               - title: 'Funded Proposers'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue is:open label:'Funded Proposers' created:>{{ date("-1000 days") }}'
               - title: 'Toolmakers and Maintainers'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue is:open label:'Toolmaker and Maintainer' created:>{{ date("-1000 days") }}'
-                color: red
+                color: 'red'
               - title: 'Stake Pool Operators'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue is:open label:'SPOs' created:>{{ date("-1000 days") }}'
-                color: red
+                color: 'red'
           - title: 'Issues'
             widgets:
             - type: 'table'
