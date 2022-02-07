@@ -30,8 +30,8 @@ jobs:
             - type: 'table'
               title: 'Issue Dashboard'
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
-          - title: 'Metric to US'
-            description: 'Distance, mass and volume; metric to US.'
+          - title: 'Status'
+            description: 'Current state of Catalyst Prioritized Problems board'
             widgets:
             - type: number
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue created:>{{ date("-1000 days") }}'
