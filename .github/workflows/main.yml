@@ -29,7 +29,7 @@ jobs:
             widgets:
             - type: 'table'
               title: 'Issue Dashboard'
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-120 days") }} sort:created-asc'
+              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
           - title: 'Metric to US'
             description: 'Distance, mass and volume; metric to US.'
             widgets:
@@ -39,7 +39,7 @@ jobs:
               url: 'https://www.google.com/search?q=km+to+miles'
               color: 'blue'
             - type: number
-              value: 'Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue interactions:<2000'
+              value: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue interactions:<2000'
               title: 'Kilograms in a pound'
               color: 'red'
             - type: number
