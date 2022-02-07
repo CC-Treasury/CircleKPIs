@@ -44,16 +44,19 @@ jobs:
             description: 'Issues per group'
             widgets:
             - type: graph
-              title: Pizza variety
+              title: Circle groups
               elements:
-              - title: New York
-                value: 18
+              - title: General ADA Holders
+                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue closed:>{{ date("-30 days") }}'
                 color: green
-              - title: Chicago
+              - title: 'Community Advisors'
                 value: 16
-              - title: Neopolitan
+              - title: 'Funded Proposals'
                 value: 15
-              - title: 'New Haven'
+              - title: 'Toolmakers and Maintainers'
+                value: 1
+                color: red
+              - title: 'Stake Pool Operators'
                 value: 1
                 color: red
           - title: 'Issues'
