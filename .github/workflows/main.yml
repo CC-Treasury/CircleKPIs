@@ -25,11 +25,11 @@ jobs:
             format: html
             filename: 'out/index.html'
           sections:
-          - title: 'Pull Requests'
+          - title: 'Issues'
             widgets:
             - type: 'table'
-              title: 'New Pull Requests (This Week)'
-              issue_query: 'Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue created:>{{ date("-90 days") }} sort:created-asc'
+              title: 'Issue Dashboard'
+              issue_query: 'Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue created:>{{ date('2018-11-25') }} sort:created-asc'
         token: ${{ github.token }}
 
     - name: Publish Documentation
