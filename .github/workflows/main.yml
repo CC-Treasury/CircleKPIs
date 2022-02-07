@@ -39,7 +39,7 @@ jobs:
               url: 'https://www.google.com/search?q=km+to+miles'
               color: 'blue'
             - type: number
-              value: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue'
+              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue'
               title: 'Kilograms in a pound'
               color: 'red'
             - type: number
