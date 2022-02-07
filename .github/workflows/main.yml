@@ -29,7 +29,7 @@ jobs:
             widgets:
             - type: 'table'
               title: 'New Pull Requests (This Week)'
-              issue_query: 'Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue created:>{{ date("-30 days") }} sort:created-asc'
+              issue_query: 'Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue created:>{{ date("-90 days") }} sort:created-asc'
         token: ${{ github.token }}
 
     - name: Publish Documentation
