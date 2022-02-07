@@ -59,6 +59,12 @@ jobs:
               - title: 'Stake Pool Operators'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"SPOs" created:>{{ date("-1000 days") }}'
                 color: red
+              - title: 'IOG'
+                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"IOG" created:>{{ date("-1000 days") }}'
+                color: red
+              - title: 'Cardano Foundation'
+                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"CF" created:>{{ date("-1000 days") }}'
+                color: red
           - title: 'Issues'
             widgets:
             - type: 'table'
