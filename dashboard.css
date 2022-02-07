@@ -218,7 +218,7 @@ div.graph_widget h3.graph_title {
 }
 
 div.graph_widget h3.graph_title a {
-    color: #222222;
+    color: #aaa;
 }
 
 div.graph {
@@ -287,7 +287,7 @@ div.table_widget h3.table_title {
 }
 
 div.table_widget h3.table_title a {
-    color: #222222;
+    color: #aaa;
 }
 
 div.table_widget table {
