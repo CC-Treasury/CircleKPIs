@@ -63,7 +63,7 @@ div#footer {
 /* Sections */
 
 div.sections {
-    background-color: #ffffff;
+    background-color: #242526;
     width: 900px;
     min-height: 250px;
     padding: 15px 50px 50px 50px;
@@ -124,7 +124,7 @@ div.number_widget {
     margin: 0 5px 5px 0;
     float: left;
     position: relative;
-    background-color: #ffffff;
+    background-color: #242526;
     border: solid 1px #dddddd;
     color: #000000;
 }
@@ -177,7 +177,7 @@ div.number_widget .value {
 div.string_widget {
     width: 558px;
     padding: 15px 20px;
-    background-color: #ffffff;
+    background-color: #242526;
     border: solid 1px #dddddd;
     color: #000000;
 }
@@ -245,7 +245,7 @@ span.graph_item_value span.value {
     text-align: right;
     padding-right: 5px;
     font-size: 11px;
-    background-color: #000000;
+    background-color: #242526;
     color: #ffffff;
 }
 span.graph_item_value span.empty_value {
