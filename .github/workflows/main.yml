@@ -29,7 +29,7 @@ jobs:
             widgets:
             - type: 'table'
               title: 'Issue Dashboard'
-              issue_query: 'Catalyst-Circle/Catalyst-Prioritized-Problems project:Catalyst-Circle/3 is:open is:issue created:>{{ date("2018-11-25 + 1 month") }} sort:created-asc'
+              issue_query: 'Catalyst-Circle/Catalyst-Prioritized-Problems project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("2018-11-25 + 1 month") }} sort:created-asc'
           - title: 'Metric to US'
             description: 'Distance, mass and volume; metric to US.'
             widgets:
