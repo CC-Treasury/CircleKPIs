@@ -24,7 +24,7 @@ jobs:
           title: 'Dashboard'
           output:
             format: html
-            filename: 'dashboard.html'
+            filename: 'index.html'
           sections:
           - title: 'Pull Requests'
             widgets:
