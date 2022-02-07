@@ -26,8 +26,8 @@ jobs:
             filename: 'out/index.html'
           setup: |
             userdata.color_func = function(num) {
-              if (num < 10) return 'green'
-              if (num > 50) return 'blue'
+              if (num < 3) return 'green'
+              if (num > 5) return 'red'
               return 'yellow'
             }
           sections:
