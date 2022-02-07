@@ -301,7 +301,7 @@ div.table_widget table th, div.table_widget table td {
     vertical-align: top;
 }
 div.table_widget table th {
-    background-color: #cccccc;
+    background-color: #484a4d;
 }
 div.table_widget table tr:nth-child(odd) td {
     background-color: #e8e8e8;
