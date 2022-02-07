@@ -6,7 +6,8 @@ body {
     /* font-family: 'Space Mono', monospace; */
     width: 1000px;
     margin: 0 auto 0 auto;
-    background-color: #eeeeee;
+    background-color: #242526;
+    color: #dadce1;
 }
 
 a {
