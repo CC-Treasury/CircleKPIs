@@ -125,13 +125,13 @@ jobs:
               - 'Date'
               - 'Description'
               - 'Test'
-              fields:
-              - title: '1776-07-04'
-                value: 'blue'
-              - title: 'Independence Day'
-                value: 'red'
-              - title: 'Oops'
-                value: 'yellow'
+              elements:
+              - value: '1776-07-04'
+                color: 'blue'
+              - value: 'Independence Day'
+                color: 'red'
+              - value: 'Oops'
+                color: 'yellow'
           - title: 'Issues'
             widgets:
             - type: 'table'
