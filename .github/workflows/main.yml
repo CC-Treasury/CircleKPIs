@@ -133,7 +133,7 @@ jobs:
                 - value: 'Independence Day'
                   color: 'red'
                   url: 'https://en.wikipedia.org/wiki/Independence_Day_(United_States)'
-                - value: 'Oops'
+                - issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue closed:>{{ date("-30 days") }}'
                   color: 'yellow'
           - title: 'Issues'
             widgets:
