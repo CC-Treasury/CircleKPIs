@@ -47,7 +47,7 @@ jobs:
               title: 'Closed issues this month'
               color: 'green'
           - title: 'Circles'
-            description: 'Issues per group (Some issues involve more than one group)'
+            description: 'Issues per group' | '(Some issues involve more than one group)'
             widgets:
             - type: graph
               title: 'Circle groups'
