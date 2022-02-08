@@ -47,8 +47,7 @@ jobs:
               title: 'Closed issues this month'
               color: 'green'
           - title: 'Circles'
-            description: 'Issues per group
-            (Some issues involve more than one group)'
+            description: 'Issues per group (Some issues involve more than one group)'
             widgets:
             - type: graph
               title: 'Circle groups'
@@ -117,6 +116,22 @@ jobs:
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue closed:>{{ date("-30 days") }}'
               title: 'Circle reset (Sign-Off)'
               color: 'green'
+          - title: 'Important Dates'
+            description: 'Important dates throughout history.'
+            widgets:
+            - type: 'table'
+              title: 'Historic US dates'
+              headers:
+              - 'Date'
+              - 'Description'
+              elements:
+              - [ '1775-04-19', 'Battles of Lexington and Concord' ]
+              - - value: '1776-07-04'
+                  color: 'blue'
+                  url: 'https://en.wikipedia.org/wiki/Independence_Day_(United_States)'
+                - value: 'Independence Day'
+                  color: 'red'
+                  url: 'https://en.wikipedia.org/wiki/Independence_Day_(United_States)'
           - title: 'Issues'
             widgets:
             - type: 'table'
