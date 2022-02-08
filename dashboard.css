@@ -295,7 +295,7 @@ div.table_widget table {
     width: 600px;
 }
 div.table_widget table th, div.table_widget table td {
-    border: solid 1px #888888;
+    border: solid 1px #474a4d;
     padding: 4px 8px;
     text-align: left;
     vertical-align: top;
