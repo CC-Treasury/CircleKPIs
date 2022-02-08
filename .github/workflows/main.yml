@@ -32,7 +32,7 @@ jobs:
             }
           sections:
           - title: 'Status'
-            description: 'Current state of Catalyst Prioritized Problems board'
+            description: 'Current state of Issues'
             widgets:
             - type: number
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue created:>{{ date("-1000 days") }}'
@@ -47,7 +47,7 @@ jobs:
               title: 'Closed issues this month'
               color: 'green'
           - title: 'Circles'
-            description: 'Issues per group'
+            description: 'Issues per group (Some issues involve more than one group)'
             widgets:
             - type: graph
               title: 'Circle groups'
