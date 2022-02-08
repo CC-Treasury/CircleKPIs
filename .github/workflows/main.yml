@@ -124,14 +124,17 @@ jobs:
               headers:
               - 'Date'
               - 'Description'
+              - 'Test'
               elements:
-              - [ '1775-04-19', 'Battles of Lexington and Concord' ]
+              - [ '1775-04-19', 'Battles of Lexington and Concord', 'Test1' ]
               - - value: '1776-07-04'
                   color: 'blue'
                   url: 'https://en.wikipedia.org/wiki/Independence_Day_(United_States)'
                 - value: 'Independence Day'
                   color: 'red'
                   url: 'https://en.wikipedia.org/wiki/Independence_Day_(United_States)'
+                - value: 'Oops'
+                  color: 'yellow'
           - title: 'Issues'
             widgets:
             - type: 'table'
