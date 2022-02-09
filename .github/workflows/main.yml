@@ -122,10 +122,8 @@ jobs:
               title: 'Issue Dashboard'
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
               fields:
-              - title: 'created dates'
-                - property: created_date
-              - title: 'Tesing 2'
-                - property: 'interactions'
+              - title: 'created dates','testing2'
+              - property: created_date
           - title: 'Important Dates'
             description: 'Important dates throughout history.'
             widgets:
