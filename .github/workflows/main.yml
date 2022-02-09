@@ -30,6 +30,7 @@ jobs:
               if (num > 10) return 'red'
               return 'yellow'
             }
+            userdata.num = 0
           sections:
           - title: 'Status'
             description: 'Current state of Issues'
@@ -123,9 +124,9 @@ jobs:
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
               fields:
               - title: 'created dates'
-                property: created-date
+                property: created_date
               - title: 'test 2'
-                value: 'test'
+                value: {{ userdata.num + 1 }}
           - title: 'Important Dates'
             description: 'Important dates throughout history.'
             widgets:
