@@ -129,7 +129,7 @@ jobs:
               elements:
               - value: '1776-07-04'
                 color: 'blue'
-              - value: 'Independence Day'
+              - value: {{ test }}
                 color: 'red'
               - value: 'Oops'
                 color: 'yellow'
