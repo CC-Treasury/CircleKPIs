@@ -139,12 +139,12 @@ jobs:
               - 'Description'
               - 'Test'
               elements:
-              - value: '1776-07-04'
-                color: 'blue'
-              - value: 'test'
-                color: 'red'
-              - value: 'Oops'
-                color: 'yellow' 
+              - - value: '1776-07-04'
+                  color: 'blue'
+                - value: 'test'
+                  color: 'red'
+                - value: 'Oops'
+                  color: 'yellow' 
                 
         token: ${{ github.token }}
 
