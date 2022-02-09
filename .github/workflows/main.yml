@@ -124,7 +124,7 @@ jobs:
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
               fields:
               - title: 'created dates'
-                property: events_url
+                property: title
               - title: 'test 2'
                 value: '{{ userdata.num += 1 }}'
               - title: test 3
