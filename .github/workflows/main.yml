@@ -128,7 +128,7 @@ jobs:
               - title: 'test 2'
                 value: '{{ userdata.num += 1 }}'
               - title: test 3
-                value: '{{ item.date }}'
+                value: '{{ item.name }}'
           - title: 'Important Dates'
             description: 'Important dates throughout history.'
             widgets:
