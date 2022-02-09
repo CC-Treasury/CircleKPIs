@@ -121,6 +121,9 @@ jobs:
             - type: 'table'
               title: 'Issue Dashboard'
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
+              flieds:
+              - title: 'created dates'
+              - property: 'created_date'
           - title: 'Important Dates'
             description: 'Important dates throughout history.'
             widgets:
@@ -133,7 +136,7 @@ jobs:
               elements:
               - value: '1776-07-04'
                 color: 'blue'
-              - value: '{{ sections[0].widgets[3].fields[1].created_date }}'
+              - value: 'test'
                 color: 'red'
               - value: 'Oops'
                 color: 'yellow' 
