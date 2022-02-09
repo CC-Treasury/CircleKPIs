@@ -30,6 +30,7 @@ jobs:
               if (num > 10) return 'red'
               return 'yellow'
             }
+            test = sections[0].widgets[4].fields[1].created_date
           sections:
           - title: 'Status'
             description: 'Current state of Issues'
