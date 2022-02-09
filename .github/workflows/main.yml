@@ -126,7 +126,7 @@ jobs:
               - title: 'created dates'
                 property: title
               - title: 'test 2'
-                value: '{{ item.labels[0].name }}'
+                value: '{{ item.labels[0].name }}, {{ item.labels[1].name }}'
               - title: test 3
                 value: '{{ date(item.created_at) }}'
           - title: 'Important Dates'
