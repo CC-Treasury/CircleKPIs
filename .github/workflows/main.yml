@@ -121,7 +121,7 @@ jobs:
             - type: 'table'
               title: 'Issue Dashboard'
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
-              flieds:
+              fields:
               - title: 'created dates'
               - property: 'created_date'
           - title: 'Important Dates'
