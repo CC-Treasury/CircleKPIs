@@ -124,11 +124,11 @@ jobs:
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
               fields:
               - title: 'created dates'
-                property: 'date(created_at)'
+                property: labels
               - title: 'test 2'
                 value: '{{ userdata.num += 1 }}'
               - title: test 3
-                value: '{{ item.created_at }}'
+                value: '{{ date(item.created_at) }}'
           - title: 'Important Dates'
             description: 'Important dates throughout history.'
             widgets:
