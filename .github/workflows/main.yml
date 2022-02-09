@@ -30,7 +30,6 @@ jobs:
               if (num > 10) return 'red'
               return 'yellow'
             }
-            test = {{ sections[0].widgets[4].fields[1].created_date }}
           sections:
           - title: 'Status'
             description: 'Current state of Issues'
@@ -117,6 +116,11 @@ jobs:
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue closed:>{{ date("-30 days") }}'
               title: 'Circle reset (Sign-Off)'
               color: 'green'
+          - title: 'Issues'
+            widgets:
+            - type: 'table'
+              title: 'Issue Dashboard'
+              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
           - title: 'Important Dates'
             description: 'Important dates throughout history.'
             widgets:
@@ -129,16 +133,11 @@ jobs:
               elements:
               - value: '1776-07-04'
                 color: 'blue'
-              - value: {{ test }}
+              - value: {{ sections[0].widgets[3].fields[1].created_date }}
                 color: 'red'
               - value: 'Oops'
-                color: 'yellow'
-          - title: 'Issues'
-            widgets:
-            - type: 'table'
-              title: 'Issue Dashboard'
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-1000 days") }} sort:created-asc'
-              
+                color: 'yellow' 
+                
         token: ${{ github.token }}
 
     - name: Publish Documentation
