@@ -37,15 +37,18 @@ jobs:
             widgets:
             - type: number
               script: |
-               const results = await github.issues.listEventsForTimeline('GET /repos/{owner}/{repo}/issues/{issue_number}/timeline', {
-                 owner: 'Catalyst-Circle',
-                 repo: 'Catalyst-Prioritized-Problems',
-                 issue_number: 69
-               })
-               const count = results.data.total_count
-               const title = 'Total events'
-               const color = (count > 10) ? 'red' : 'green'
-               return { value: count, title: title, color: color }
+                const owner = Catalyst-Circle
+                const repo = Catalyst-Prioritized-Problems
+                const issue_number = 69
+                const results = await github.issues.listEventsForTimeline({
+                  owner,
+                  repo,
+                  issue_number,
+                });
+                const count = results.data.total_count
+                const title = 'Total events'
+                const color = (count > 10) ? 'red' : 'green'
+                return { value: count, title: title, color: color }
             - type: number
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-30 days") }}'
               title: 'Opened issues this month'
