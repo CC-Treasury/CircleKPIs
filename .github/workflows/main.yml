@@ -38,7 +38,7 @@ jobs:
             - type: number
               script: |
                 const repo = 'libgit2/libgit2'
-                const results = await github.search.issuesAndPullRequests({
+                const results = await github.search.issuesAndPullRequests.listEventsForTimeline({
                   q: `repo:${repo} is:pr is:open created:<${date('-1 day')}`
                 })
                 const count = results.data.total_count
