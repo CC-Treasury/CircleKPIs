@@ -36,9 +36,15 @@ jobs:
             description: 'Current state of Issues'
             widgets:
             - type: number
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue created:>{{ date("-1000 days") }}'
-              title: 'Total open Issues'
-              color: 'blue'
+              script: |
+              const repo = 'libgit2/libgit2'
+              const results = await github.search.issuesAndPullRequests({
+                q: `repo:${repo} is:pr is:open created:<${date('-1 day')}`
+              })
+              const count = results.data.total_count
+              const title = 'PRs older than 1 day'
+              const color = (count > 10) ? 'red' : 'green'
+              return { value: count, title: title, color: color }
             - type: number
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-30 days") }}'
               title: 'Opened issues this month'
