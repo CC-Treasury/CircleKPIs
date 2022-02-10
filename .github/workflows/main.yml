@@ -126,7 +126,7 @@ jobs:
               - title: 'Title'
                 property: title
               - title: 'Comments'
-                value: '{{ item.interactions }}'
+                value: '{{ item.reactions }}'
               - title: 'Date Created'
                 value: '{{ date(item.created_at) }}'
           - title: 'Important Dates'
