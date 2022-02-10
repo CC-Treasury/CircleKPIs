@@ -38,6 +38,7 @@ jobs:
             - type: number
               script: |
                const repo = 'Catalyst-Circle/Catalyst-Prioritized-Problems/issues/69/timeline'
+               const issue_number = '69'
                 const results = await github.issues.listEventsForTimeline({
                   q: `repo:${repo} issue_number: 69`
                 })
