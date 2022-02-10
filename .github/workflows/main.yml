@@ -37,12 +37,12 @@ jobs:
             widgets:
             - type: number
               script: |
-                const repo = 'libgit2/libgit2'
-                const results = await github.search.issuesAndPullRequests.listEventsForTimeline({
-                  q: `repo:${repo} is:pr is:open created:<${date('-1 day')}`
+                const repo = 'Catalyst-Circle/Catalyst-Prioritized-Problems/issues/69/timeline'
+                const results = await github.issues.listEventsForTimeline({
+                  q: `repo:${repo} issue_number:69`
                 })
                 const count = results.data.total_count
-                const title = 'PRs older than 1 day'
+                const title = 'Total events'
                 const color = (count > 10) ? 'red' : 'green'
                 return { value: count, title: title, color: color }
             - type: number
