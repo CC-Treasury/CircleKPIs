@@ -39,7 +39,7 @@ jobs:
               script: |
                 const repo = 'Catalyst-Circle/Catalyst-Prioritized-Problems/issues/69/timeline'
                 const results = await github.issues.listEventsForTimeline({
-                  q: `repo:${repo} issue_number:69`
+                  q: `repo:${repo}`
                 })
                 const count = results.data.total_count
                 const title = 'Total events'
