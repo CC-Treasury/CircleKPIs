@@ -137,16 +137,16 @@ jobs:
               - title: 'Date Created'
                 value: '{{ date(item.created_at) }}'
           - title: 'Important Dates'
-            description: 'Important dates throughout history.'
+            description: 'Test'
             widgets:
             - type: 'table'
-              title: 'Historic US dates'
+              title: 'Test Dates'
               headers:
               - 'Date'
               - 'Description'
               - 'Test'
               elements:
-              - - value: '1776-07-04'
+              - - value: '1Test'
                   color: 'blue'
                 - value: 'test'
                   color: 'red'
