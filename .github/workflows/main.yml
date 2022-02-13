@@ -31,8 +31,6 @@ jobs:
               return 'yellow'
             }
             userdata.num = 0
-            userdata.num2 = 1
-            userdata.num3 = 3
           sections:
           - title: 'Current Status'
             description: 'Current state of Issues'
@@ -76,17 +74,6 @@ jobs:
               color: 'yellow'
             - type: number
               issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue comments:>0 updated:>{{ date("-30 days") }}'
-              title: 'This month'
-              color: 'blue'
-          - title: 'Issue events'
-            description: 'Total issue events'
-            widgets:
-            - type: number
-              value: '{{ userdata.num2 }}'
-              title: 'Last month'
-              color: 'yellow'
-            - type: number
-              value: '{{ userdata.num3 }}'
               title: 'This month'
               color: 'blue'
           - title: 'Circles'
