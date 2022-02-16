@@ -126,34 +126,6 @@ jobs:
               - title: 'Cardano Foundation (Last Month)'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"CF" created:<{{ date("-30 days") }}'
                 color: 'blue'
-          - title: 'Issues'
-            widgets:
-            - type: 'table'
-              title: 'General ADA Holders Comments'
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue is:open label:"Community Advisor" created:<{{ date("-0 days") }} updated:>{{ date("-30 days") }} sort:created-asc'
-              fields:
-              - title: 'Title'
-                property: title
-              - title: 'Comments'
-                value: '{{ item.comments }}'
-              - title: 'Date Created'
-                value: '{{ date(item.created_at) }}'
-          - title: 'Important Dates'
-            description: 'Test'
-            widgets:
-            - type: 'table'
-              title: 'Test Dates'
-              headers:
-              - 'Date'
-              - 'Description'
-              - 'Test'
-              elements:
-              - - value: '1Test'
-                  color: 'blue'
-                - value: 'test'
-                  color: 'red'
-                - value: 'Whoops'
-                  color: 'yellow' 
                 
         token: ${{ github.token }}
 
