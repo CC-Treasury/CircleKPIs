@@ -85,10 +85,10 @@ jobs:
               title: 'Circle groups'
               elements:
               - title: 'General ADA Holders'
-                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"General Voters" created:<{{ date("-30 days") }}'
+                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"General Voters" created:<{{ date("1 days") }}'
                 color: 'green'
               - title: 'General ADA Holders (Last Month)'
-                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"General Voters" created:>{{ date("-60 days") }}..<{{ date("-30 days") }}'
+                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"General Voters" created:<{{ date("-30 days") }}'
                 color: 'blue'
               - title: 'Community Advisors'
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"Community Advisor" created:<{{ date("1 days") }}'
