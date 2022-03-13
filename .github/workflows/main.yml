@@ -121,10 +121,10 @@ jobs:
                 issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"IOG" created:<{{ date("-30 days") }}'
                 color: 'blue'
               - title: 'Cardano Foundation'
-                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"CF" created:<{{ date("1 days") }}'
+                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"Cardano Foundation" created:<{{ date("1 days") }}'
                 color: 'green'
               - title: 'Cardano Foundation (Last Month)'
-                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"CF" created:<{{ date("-30 days") }}'
+                issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:open is:issue label:"Cardano Foundation" created:<{{ date("-30 days") }}'
                 color: 'blue'
                 
         token: ${{ github.token }}
