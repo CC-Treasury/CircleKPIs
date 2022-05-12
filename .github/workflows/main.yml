@@ -38,7 +38,7 @@ jobs:
             description: 'Current state of Issues'
             widgets:
             - type: number
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-30 days") }}'
+              issue_query: 'repo:Catalyst-Circle/Catalyst-Prioritized-Problems is:issue created:>{{ date("-30 days") }}'
               title: 'Opened issues this month'
               color: 'red'
             - type: number
