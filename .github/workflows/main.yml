@@ -60,7 +60,7 @@ jobs:
             description: 'Total issues that received updates'
             widgets:
             - type: number
-              issue_query: 'repo:Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue updated:>{{ date("-60 days") }}..<{{ date("-30 days") }}'
+              issue_query: 'repo:Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue updated:<{{ date("-30 days") }}..>{{ date("-60 days") }}'
               title: 'Last month'
               color: 'yellow'
             - type: number
@@ -71,7 +71,7 @@ jobs:
             description: 'Total issues that received comments'
             widgets:
             - type: number
-              issue_query: 'repo:Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue comments:>0 updated:>{{ date("-60 days") }}..<{{ date("-30 days") }}'
+              issue_query: 'repo:Catalyst-Circle/Catalyst-Prioritized-Problems is:open is:issue comments:>0 updated:<{{ date("-30 days") }}..>{{ date("-60 days") }}'
               title: 'Last month'
               color: 'yellow'
             - type: number
